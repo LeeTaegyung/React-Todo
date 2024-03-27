@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 10px;
+  padding: 100px 0;
 }
 
 .container {
@@ -15,6 +15,7 @@
   border: 2px solid #000;
 }
 
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -25,6 +26,94 @@
 }
 .header .title {
   font-size: 30px;
+  font-weight: 700;
 }
+
+/* content */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* footer */
 .footer {
+  border-top: 2px solid #000;
+  line-height: 30px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+.footer p {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* check_item */
+.check_item input {
+  display: none;
+}
+.check_item input + label {
+  position: relative;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/* todo_box */
+.todo_box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+.todo_form {
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+.todo_form input {
+  display: block;
+  flex: 1;
+}
+.todo_form .todo_add {
+  width: 60px;
+  color: #fff;
+  background: #000;
+  flex: 0 0 auto;
+  border-radius: 4px;
+}
+
+.todo_content {
+  padding: 10px;
+  flex: 1;
+  overflow: auto;
+}
+.todo_list {
+}
+.todo_item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  gap: 10px;
+}
+.todo_item .check_item {
+  flex: 1;
+}
+.todo_modify {
+  display: flex;
+  gap: 5px;
+  flex: 0 0 auto;
+}
+.todo_modify button {
+  display: block;
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+  background: #eee;
+  border-radius: 4px;
 }
